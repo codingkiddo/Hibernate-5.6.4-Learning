@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 22 Jan 2022, 15:13:54 by Hibernate Tools 5.5.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.hibernate.model.Student" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="STUDENT">
+        <id access="field" name="id" type="int">
+            <column name="id"/>
+            <generator class="identity">
+                <param name="GENERATOR_NAME"/>
+            </generator>
+        </id>
+        <property access="field" generated="never" lazy="false" name="firstName" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="FIRST_NAME" not-null="true"/>
+        </property>
+        <property access="field" generated="never" lazy="false" name="lastName" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="LAST_NAME" not-null="true"/>
+        </property>
+        <property access="field" generated="never" lazy="false" name="section" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="SECTION" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
